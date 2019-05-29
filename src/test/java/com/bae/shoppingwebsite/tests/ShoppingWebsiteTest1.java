@@ -1,5 +1,7 @@
 package com.bae.shoppingwebsite.tests;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -65,7 +67,9 @@ public class ShoppingWebsiteTest1 {
 		checkElement.click();
 		checkElement = driver.findElement(By.xpath("//*[@id=\"cart_navigation\"]/button/span"));
 		checkElement.click();
-		// assertTrue(checkElement.isDisplayed());
+		checkElement = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p[1]"));
+
+		assertTrue(checkElement.isDisplayed());
 
 		// Thread.sleep(5000);
 	}
