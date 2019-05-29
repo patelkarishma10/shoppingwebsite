@@ -67,6 +67,6 @@ public class ShoppingWebsiteTest1 {
 		checkElement.click();
 		// assertTrue(checkElement.isDisplayed());
 
-		Thread.sleep(5000);
+		// Thread.sleep(5000);
 	}
 }
